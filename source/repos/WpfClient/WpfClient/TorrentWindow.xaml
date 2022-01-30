@@ -1,0 +1,96 @@
+﻿<Window x:Class="WpfClient.TorrentWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:p="clr-namespace:WpfClient.Properties"
+        xmlns:local="clr-namespace:WpfClient"
+        mc:Ignorable="d"
+        Title="TorrentWindow" Height="300" Width="700" Closing="Window_Closing">
+    <DockPanel>
+        <Grid>
+            <TabControl>
+                <TabItem>
+                    <TabItem.Header>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Downloads folder" Foreground="Black" />
+                        </StackPanel>
+                    </TabItem.Header>
+
+                    <Grid Name="DownloadsFolderGrid">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="1*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="24" />
+                            <RowDefinition Height="24" />
+                            <RowDefinition Height="1*" />
+                        </Grid.RowDefinitions>
+
+                        <Label Grid.ColumnSpan="2" Grid.Row="1" Content="{Binding Source={x:Static p:Settings.Default}, Path=DownloadsPath, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Center"></Label>
+                        <Button Name="ButtonPublishFiles" Grid.Row="0" Content="Publish files" Grid.Column="1" Click="ButtonPublishFiles_Click"/>
+                        <Button Name="ButtonRefreshDirectory" Grid.Row="0" Grid.Column="0" Content="Refresh list" Click="ButtonRefreshDirectory_Click"></Button>
+
+                        <ScrollViewer  Grid.Row="2" Grid.ColumnSpan="3">
+
+                            <Grid Name="DownloadsDirectoryGrid">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="3*" />
+                                    <ColumnDefinition Width="64" />
+                                    <ColumnDefinition Width="64" />
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="24" />
+                                    <RowDefinition Height="9*" />
+                                    <RowDefinition Height="1*" />
+                                </Grid.RowDefinitions>
+                                <TextBlock Name="TextBlockDownloads" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap" >Downloads here</TextBlock>
+                            </Grid>
+                        </ScrollViewer>
+
+                    </Grid>
+                </TabItem>
+                <TabItem>
+                    <TabItem.Header>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Download files" Foreground="Black" />
+                        </StackPanel>
+                    </TabItem.Header>
+                    <Grid Name="FileSearchGrid">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="3*" />
+                            <ColumnDefinition Width="1*" />
+                            <!--<ColumnDefinition Width="5*"/>-->
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="24" />
+                            <RowDefinition Height="10*" />
+                            <RowDefinition Height="24"/>
+                            <RowDefinition Height="10*" />
+                        </Grid.RowDefinitions>
+
+                        <Border BorderThickness="1" BorderBrush="Black" Grid.Column="0" Grid.Row="0" Grid.RowSpan="3" Grid.ColumnSpan="3"/>
+                        <Border BorderThickness="1" BorderBrush="Black" Grid.Column="0" Grid.Row="3" Grid.RowSpan="3" Grid.ColumnSpan="3"/>
+
+                        <TextBox Grid.Row="0" Grid.Column="0" Name="TextBoxFileSearch" Text="*"></TextBox>
+                        <Button  Grid.Row="0" Grid.Column="1" Name="ButtonSubmitFileSearch" Content="Search" Click="ButtonSubmitFileSearch_Click"></Button>
+                        <Label Grid.Row="2" Grid.Column="0" Name="LabelSearchResultCount" Content=""></Label>
+
+                        <ScrollViewer Grid.Row="1" Grid.ColumnSpan="3" >
+                            <StackPanel>
+
+                                <Grid Name="FileSearchResultsGrid"/>
+                            </StackPanel>
+                        </ScrollViewer>
+
+                        <ScrollViewer Grid.Row="4"  Grid.ColumnSpan="3" >
+                            <StackPanel Name="DownloadsAndUploadsPanel"></StackPanel>
+                        </ScrollViewer>
+                    </Grid>
+                </TabItem>
+
+            </TabControl>
+        </Grid>
+    </DockPanel>
+</Window>

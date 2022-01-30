@@ -1,0 +1,70 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfClient", "WpfClient\WpfClient.csproj", "{B4C6C56F-E176-4F64-8DD6-1D6523869525}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediationServer", "MediationServer\MediationServer.csproj", "{D72AAEDE-7436-4592-82F8-B8690E147E15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceInterface", "ServiceInterface\ServiceInterface.csproj", "{9C4917A6-6743-48B2-A097-27E5B5D73E69}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TorrentDataAccessLayer", "TorrentDataAccessLayer\TorrentDataAccessLayer.csproj", "{5C42192F-BBDA-4B2A-80F6-8BA2B79C4BEF}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WebPortal", "..\..\WebSites\WebPortal\", "{86F511D6-98DB-47FE-B7AD-94ACCA52119C}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6.1"
+		ProjectReferences = "{5c42192f-bbda-4b2a-80f6-8ba2b79c4bef}|TorrentDataAccessLayer.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_52972"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\WebSites\WebPortal\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_52972\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_52972"
+		Release.AspNetCompiler.PhysicalPath = "..\..\WebSites\WebPortal\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_52972\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "52972"
+		SlnRelativePath = "..\..\WebSites\WebPortal\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B4C6C56F-E176-4F64-8DD6-1D6523869525}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4C6C56F-E176-4F64-8DD6-1D6523869525}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4C6C56F-E176-4F64-8DD6-1D6523869525}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4C6C56F-E176-4F64-8DD6-1D6523869525}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D72AAEDE-7436-4592-82F8-B8690E147E15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D72AAEDE-7436-4592-82F8-B8690E147E15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D72AAEDE-7436-4592-82F8-B8690E147E15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D72AAEDE-7436-4592-82F8-B8690E147E15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C4917A6-6743-48B2-A097-27E5B5D73E69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C4917A6-6743-48B2-A097-27E5B5D73E69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C4917A6-6743-48B2-A097-27E5B5D73E69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C4917A6-6743-48B2-A097-27E5B5D73E69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C42192F-BBDA-4B2A-80F6-8BA2B79C4BEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C42192F-BBDA-4B2A-80F6-8BA2B79C4BEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C42192F-BBDA-4B2A-80F6-8BA2B79C4BEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C42192F-BBDA-4B2A-80F6-8BA2B79C4BEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86F511D6-98DB-47FE-B7AD-94ACCA52119C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86F511D6-98DB-47FE-B7AD-94ACCA52119C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86F511D6-98DB-47FE-B7AD-94ACCA52119C}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{86F511D6-98DB-47FE-B7AD-94ACCA52119C}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {994ECC6B-2A6A-46B3-A09C-D4B163B54883}
+	EndGlobalSection
+EndGlobal

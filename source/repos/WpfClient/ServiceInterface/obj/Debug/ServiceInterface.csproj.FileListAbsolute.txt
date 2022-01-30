@@ -1,0 +1,17 @@
+C:\Users\dan_p\source\repos\WpfClient\ServiceInterface\bin\Debug\ServiceInterface.dll
+C:\Users\dan_p\source\repos\WpfClient\ServiceInterface\bin\Debug\ServiceInterface.pdb
+C:\Users\dan_p\source\repos\WpfClient\ServiceInterface\obj\Debug\ServiceInterface.csproj.CoreCompileInputs.cache
+C:\Users\dan_p\source\repos\WpfClient\ServiceInterface\obj\Debug\ServiceInterface.dll
+C:\Users\dan_p\source\repos\WpfClient\ServiceInterface\obj\Debug\ServiceInterface.pdb
+C:\Users\dan_p\Desktop\source\repos\WpfClient\ServiceInterface\bin\Debug\ServiceInterface.dll
+C:\Users\dan_p\Desktop\source\repos\WpfClient\ServiceInterface\bin\Debug\ServiceInterface.pdb
+C:\Users\dan_p\Desktop\source\repos\WpfClient\ServiceInterface\obj\Debug\ServiceInterface.csproj.CoreCompileInputs.cache
+C:\Users\dan_p\Desktop\source\repos\WpfClient\ServiceInterface\obj\Debug\ServiceInterface.dll
+C:\Users\dan_p\Desktop\source\repos\WpfClient\ServiceInterface\obj\Debug\ServiceInterface.pdb
+C:\Users\dan_p\Desktop\source\repos\WpfClient\ServiceInterface\obj\Debug\ServiceInterface.csprojResolveAssemblyReference.cache
+C:\Users\dan_p\Desktop\minit\source\repos\WpfClient\ServiceInterface\bin\Debug\ServiceInterface.dll
+C:\Users\dan_p\Desktop\minit\source\repos\WpfClient\ServiceInterface\bin\Debug\ServiceInterface.pdb
+C:\Users\dan_p\Desktop\minit\source\repos\WpfClient\ServiceInterface\obj\Debug\ServiceInterface.csproj.CoreCompileInputs.cache
+C:\Users\dan_p\Desktop\minit\source\repos\WpfClient\ServiceInterface\obj\Debug\ServiceInterface.dll
+C:\Users\dan_p\Desktop\minit\source\repos\WpfClient\ServiceInterface\obj\Debug\ServiceInterface.pdb
+C:\Users\dan_p\Desktop\minit\source\repos\WpfClient\ServiceInterface\obj\Debug\ServiceInterface.csprojResolveAssemblyReference.cache

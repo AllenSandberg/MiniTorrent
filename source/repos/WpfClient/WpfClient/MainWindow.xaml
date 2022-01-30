@@ -1,0 +1,51 @@
+﻿<Window x:Class="WpfClient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:p="clr-namespace:WpfClient.Properties"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfClient"
+        mc:Ignorable="d"
+        Title="MiniTorrent" Height="220" Width="450" Closing="Window_Closing" ResizeMode="CanMinimize">
+    <Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="35" />
+                <RowDefinition Height="25" />
+                <RowDefinition Height="25" />
+                <RowDefinition Height="25" />
+                <RowDefinition Height="25" />
+                <RowDefinition Height="25" />
+                <RowDefinition Height="25" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="2*" />
+            </Grid.ColumnDefinitions>
+            <Label   Grid.Column="0" Grid.Row="1" Content="Username:"/>
+            <Label   Grid.Column="3" Grid.Row="1" Content="Password:"/>
+            <Label   Grid.Column="3" Grid.Row="2" Content="Port in:"/>
+            <Label   Grid.Column="0" Grid.Row="2" Content="Client IP:"/>
+            <Label   Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="6" HorizontalAlignment="Center" Content="MiniTorrent - Please sign in:" ></Label>
+            <Label   Visibility="Hidden" Grid.Column="4" Grid.Row="1" Content="Port out:"/>
+            <Label   Visibility="Hidden" Grid.Column="0" Grid.Row="2" Content="Server IP:"/>
+            <Label   Visibility="Hidden" Grid.Column="2" Grid.Row="2" Content="Server port:"/>
+            <Label   Grid.ColumnSpan="2" Grid.Column="0" Grid.Row="3" Content="Downloads folder path:"/>
+            <TextBox Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="1" Margin="3" Text="{Binding Source={x:Static p:Settings.Default}, Path=Username, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+            <TextBox  Grid.Column="4" Grid.ColumnSpan="2" Grid.Row="1" Margin="3" Text="{Binding Source={x:Static p:Settings.Default}, Path=Password, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+            <TextBox Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="2" Margin="3" Text="{Binding Source={x:Static p:Settings.Default}, Path=ClientIP, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+            <TextBox Grid.Column="4" Grid.ColumnSpan="2" Grid.Row="2" Margin="3" Text="{Binding Source={x:Static p:Settings.Default}, Path=ClientPortIn, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+            <TextBox Visibility="Hidden" Grid.Column="5" Grid.Row="1" Margin="3" Text="{Binding Source={x:Static p:Settings.Default}, Path=ClientPortOut, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+            <TextBox Visibility="Hidden" Grid.Column="1" Grid.Row="2" Margin="3" Text="{Binding Source={x:Static p:Settings.Default}, Path=ServerIP, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+            <TextBox Visibility="Hidden" Grid.Column="3" Grid.Row="2" Margin="3" Text="{Binding Source={x:Static p:Settings.Default}, Path=ServerPort, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+            <TextBox Grid.ColumnSpan="3" Grid.Column="2" Grid.Row="3" Margin="3.444,2.667,0.333,3.111" Text="{Binding Source={x:Static p:Settings.Default}, Path=DownloadsPath, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" IsEnabled="False"/>
+            <Button Name="ButtonPickDownloadsPath" Grid.Column="5" Grid.Row="3" Content="Browse" HorizontalAlignment="Right" Margin="0,2.667,2.556,3.111" Width="69" Click="ButtonPickDownloadsPath_Click"/>
+            <Button Name="ButtonSignIn" Grid.ColumnSpan="4" Grid.Column="1" Grid.Row="5" Content="Sign In" Click="ButtonSignIn_Click"/>
+            <Label Name="LabelConfigError" Grid.ColumnSpan="6" Grid.Row="6" Content="err" HorizontalContentAlignment="Center" Visibility="Hidden"/>
+        </Grid>
+    </Grid>
+</Window>
