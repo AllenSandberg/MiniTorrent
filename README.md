@@ -1,0 +1,5 @@
+# MiniTorrent
+ Associated with Afeka Tel Aviv Academic College of Engineering - .NET MiniTorrentApp P2P program for file sharing. The software works in client-server architecture . The server accepts new clients, keeps their IP address and list of files they are willing to share with others. The Clients can search and download files that are available from several users at the same time, as well as uploading their own files to others. 
+
+The web application administrator can track and review all his ingoing/outgoing messages through the web application’s messaging system. The clerk’s web messaging system contains all drivers’ message requests and uploaded documents. Furthermore, the web application manages an automatic text System with a wide-range of detailed appeal text templates (each corresponding to the root cause of appeal). 
+The web application activates a service that sends a push notification message through Google Cloud’s messaging system to the driver’s application for immediate updates in the handling of his police traffic report. 
